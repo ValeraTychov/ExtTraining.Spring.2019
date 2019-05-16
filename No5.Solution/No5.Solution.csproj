@@ -40,7 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entitises\BoldText.cs" />
+    <Compile Include="Entitises\Document.cs" />
+    <Compile Include="Entitises\DocumentPart.cs" />
+    <Compile Include="Entitises\Hyperlink.cs" />
+    <Compile Include="Entitises\PlainText.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visitors\IVisitor.cs" />
+    <Compile Include="Visitors\ToHtmlVisitor.cs" />
+    <Compile Include="Visitors\ToLaTeXVisitor.cs" />
+    <Compile Include="Visitors\ToPlainTextVisitor.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
